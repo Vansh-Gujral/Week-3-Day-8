@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int stringLength(const string& str) {
+    int length = 0;
+    for (char c : str) {
+        length++;
+    }
+    return length;
+}
+
+int main() {
+    string str1 = "Hello, World!";
+    string str2 = "";
+    string str3 = " ";
+
+    int length1 = stringLength(str1);
+    int length2 = stringLength(str2);
+    int length3 = stringLength(str3);
+
+    cout << "Length of str1: " << length1 << endl;
+    cout << "Length of str2: " << length2 << endl;
+    cout << "Length of str3: " << length3 << endl;
+
+    return 0;
+}
